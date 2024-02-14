@@ -1,0 +1,171 @@
+#campus h1{
+    text-align: center;
+    margin-top: 1px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+img:hover{
+    transform: scale(1.04);
+    transition: .3s;
+}
+
+#campus1 h1{
+    text-align:center;
+    background-color:black;
+    color:white;
+    padding:20px;
+    margin-top:2px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#campus1 ul{
+    list-style:none;
+}
+#Campus_img1 {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+   
+    
+}
+.Imges{
+    filter: grayscale(100%);
+    transition: .2s ease-in-out;
+   
+}
+img{
+    padding: 10px;
+}
+.Imges:hover {
+     filter: grayscale(0%);
+
+}
+#Campus_img2 {
+     width: 350px;
+     height: 200px;
+     border-radius: 20px;
+    }
+#Campus_img3 {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+#Campus_img4 {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+#Campus_img5 {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+}
+#Campus_img6 {
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+}
+#Campus_img7 {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+#Campus_img8 {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+#Festival_Image1 {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+}
+/* #Festival_Image1 {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+#Festival_Image3 {
+    height: 200px;
+    border-radius: 20px;
+}
+#Festival_Image4 {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+#Festival_Image5 {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+}
+#Festival_Image6 {
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+}
+#Festival_Image7 {
+    height: 200px;
+    width: 295px;
+    border-radius: 20px;
+}
+#Festival_Image8 {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+} */
+#Sports_Image1 {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+}
+#Sports_Image2 {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+}
+#Sports_Image3 {
+    width: 330px;
+    height: 200px;
+    border-radius: 20px;
+}
+#Sports_Image4 {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+#Sports_Image5 {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+}
+#Sports_Image6 {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+}
+#Sports_Image7 {
+    height: 200px;
+    width: 330px;
+    border-radius: 20px;
+}
+#Sports_Image8 {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+#foot1 h1{
+    margin-top:1070px;
+}
+#campus1{
+    margin-bottom: 50px;
+}
+img{
+    transition: transform .100s ease-in-out;
+}
+
+.Imges:hover{
+    transform: rotate(360deg);
+}

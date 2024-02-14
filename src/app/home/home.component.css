@@ -1,0 +1,110 @@
+.box {
+    position: relative;
+    width: 1150px;
+    height: 600px;
+    display: inline-block;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+    margin-left: -12px;
+    border: 2px solid #fff;
+
+}
+#imgtable{
+  margin-left: 50px;
+}
+
+#College_image1 {
+    width: 1150px;
+    height: 600px;
+}
+
+#College_image2 {
+    width: 1150px;
+    height: 600px;
+}
+#leftarrow{
+  width: 40px;
+  /* transform: rotate(90deg); */
+}
+#rigtharrow{
+  width: 40px;
+  transform: rotate(180deg); 
+}
+img {
+    width: 100%;
+    transition: all linear 0.7s;
+}
+
+    img.hover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+.box:hover img {
+    opacity: 0;
+}
+
+    .box:hover img.hover-img {
+        opacity: 1;
+    }
+
+#Image_Container {
+    text-align: center;
+}
+#showcase{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+#firstfoot{
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 100px;
+  }
+  #secondfoot{
+    margin-top: 30px;
+    margin-left: 150px;
+  }
+  #thirdfoot{
+    margin-top: 3px;
+  }
+  #foot1{
+    padding: 1px;
+  }
+
+  #thirdfoot img{
+    width: 30px;
+  }
+  #thirdfoot ul li {
+    padding: 5px;
+  }
+  #thirdfoot{
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  #fourthfoot{
+    margin-left: 100px;
+  }
+  #headtext{
+   margin-top: 30px;
+  }
+  #headtext h1{
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px; */
+  }
+  #main p{
+   margin-left: 120px;
+   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 16px; */
+  }
+ #main #foodtext{
+font-size: 30px;
+ }
+ #main{
+  margin-bottom: 50px;
+ }
+ #main h1{
+  margin-left: 20px;
+ }

@@ -1,0 +1,76 @@
+
+<marquee [scrollAmount]="20" id="headtext"><h1>Welcome To The Login Page !!! </h1></marquee>
+<p id="emojiId">{{emoji}}</p>
+<!-- -->
+<mat-card  style.background-color={{color}} style="width: 1000px;"  >
+  <mat-card-content >
+    <div class="header">
+      <h2>ADMIN</h2>
+    </div>
+    <div class="email-input" >
+      <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input type="text" class="inputclass" [(ngModel)]="userName" required matInput autocomplete="off" >
+        </mat-form-field>
+        </div>
+    <div class="email-input" >
+<mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input type="email" class="inputclass" required matInput #value1 autocomplete="off">
+  </mat-form-field>
+  </div>
+  <div>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input [type]="imgs? 'password': 'text'" style="padding-right: 100px;" class="inputclass" required #value2 matInput autocomplete="off">
+  </mat-form-field>
+  </div>
+  <img src="assets/images/{{imgs? 'hide':'show'}}.png" (click)="changing()" />
+  <a routerLink="./displayresult"></a>
+  <p id="texthide" style="visibility:{{hiding1}}">{{texting}}</p>
+  <button mat-raised-button id="log_btn" style="visibility:{{hiding}}"  (click)="getvalue(value1.value,value2.value)" > Login</button> 
+  <button mat-raised-button  id="trybtn" style="visibility:{{trybtn? 'visible':'hidden'}}" (click)="call()" ><mat-icon>refresh</mat-icon>Try Again</button>
+     </mat-card-content>
+     </mat-card>
+
+
+
+
+
+
+
+
+
+  <!-- <button >Login</button> -->
+  <!-- style.background-color={{color}} -->
+
+
+
+
+
+  <!-- <mat-card style.background-color={{color}} style="width: 1000px;">
+    <mat-card-content>
+      <div class="header">
+        <h2>Login</h2>
+      </div>
+      <form  name="loginForm" [formGroup]="loginForm">
+        <div class="email-input" >
+          <mat-form-field class="full-width" appearance="outline" >
+            <mat-label style="color: #333;">Email</mat-label>
+            <input formControlName="email" matInput required [(ngModel)]="userName" #value1 />
+          </mat-form-field>
+        </div>
+        <div>
+          <span class="aLink">  </span>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label style="color: #333;">Passsword</mat-label>
+            <input formControlName="password" matInput #value2 required  />
+          </mat-form-field>
+        </div>
+        <a routerLink="./displayresult"></a>
+        <button mat-flat-button color="primary" style="background-color: black;" (click)="getvalue(value1.value,value2.value)" >
+                              Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>  -->
+

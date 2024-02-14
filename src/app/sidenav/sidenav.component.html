@@ -1,0 +1,21 @@
+
+    <mat-sidenav-container >
+    <mat-sidenav mode="side"  >
+      <mat-nav-list style="width:200px;">
+        <a mat-list-item routerLink="one" style="height: 70px;"><mat-icon  style="padding-right:10px ;"> home </mat-icon> Home</a>
+        <a mat-list-item  routerLink="second" style="height: 70px;"><mat-icon style="padding-right:10px ;">class</mat-icon> Course</a>
+        <a mat-list-item routerLink="achievement" style="height: 70px;"><mat-icon style="padding-right:10px ;">grade</mat-icon> Achievements</a>
+        <a mat-list-item style="height: 70px;"><mat-icon style="padding-right:10px ;">perm_media</mat-icon> Photos</a>
+        <a mat-list-item routerLink="login" style="height: 70px;"><mat-icon style="padding-right:10px ;">lock</mat-icon> Login</a>
+      </mat-nav-list>
+     
+    </mat-sidenav>
+    <mat-sidenav-content>
+  <p style="height:88vh;">
+    <router-outlet></router-outlet>
+  </p>
+   </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <!-- <label>(ratingclicked)="Clicked($event)"</label> -->
+

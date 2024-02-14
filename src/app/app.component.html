@@ -1,0 +1,124 @@
+<!-- 
+  <mat-toolbar class="mat-elevation-z5">
+      <button mat-icon-button (click)="opened=!opened" class="example-icon"  aria-label="Example icon-button with menu icon"> 
+   <mat-icon>menu</mat-icon>
+    </button> 
+  <span>My College Website</span>
+  <span class="example-spacer"></span>
+  <div>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+  <mat-icon>delete</mat-icon>
+  </button>
+</div>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+   <mat-icon>share</mat-icon>
+ </button>
+</mat-toolbar>
+<mat-sidenav-container style="margin-top:60px;" class="example-container" >
+  <mat-sidenav style="display: flex;"  [(opened)]="opened">
+    <mat-nav-list style="width: 200px;">
+      <a mat-list-item routerLink="one"  style="height: 70px;"><mat-icon  style="padding-right:10px ;"> home </mat-icon> Home</a>
+      <a mat-list-item  routerLink="second"   style="height: 70px;"><mat-icon style="padding-right:10px ;">class</mat-icon> Course</a>
+      <a mat-list-item routerLink="achievement" style="height: 70px;"><mat-icon style="padding-right:10px ;">grade</mat-icon> Achievements</a>
+      <a mat-list-item  style="height: 70px;"><mat-icon style="padding-right:10px ;">perm_media</mat-icon> Photos</a>
+      <a mat-list-item routerLink="login" style="height: 70px;"><mat-icon style="padding-right:10px ;">lock</mat-icon> Login</a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <p >
+      <router-outlet></router-outlet> 
+    </p>
+     </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+
+
+
+ <mat-expansion-panel hideToggle>
+  <mat-expansion-panel-header >
+    <div id="menudiv">
+    <mat-icon>menu</mat-icon>     
+  </div>
+  
+  <h1>Sona College Of Technology </h1> <br>
+  <div class="dropdown" >
+    <select (click)="function1()" style="font-family: {{v}};">
+      <option  value="" selected disabled>Select Font Family</option>
+      <option  style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Segoe</option>
+      <option  style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Gill</option>
+      <option  style="font-family:Arial, Helvetica, sans-serif;" value="Arial, Helvetica, sans-serif;">Arial</option>
+      <option  value="Georgia, 'Times New Roman', Times, serif" style="font-family:Georgia, 'Times New Roman', Times, serif;">Times</option>
+
+    </select>
+  </div>
+<p class="text">{{"Font Size : "+size}}</p>
+  <div class="slider">
+<div>
+  <img  src="https://cdn-icons-png.flaticon.com/128/1828/1828899.png" width="30px" height="30px" (click)="subtraction()" style="visibility: {{value1}};"  />
+</div>
+  <div style=" margin-top:-10px;">
+    <mat-slider class="slide" min="16" max="24" step="2" disabled="true" keyup="getvalue(value.value)" value="{{size}}" >
+      </mat-slider>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/128/2920/2920693.png" width="30px" height="30px" (click)="addition()"  style="visibility: {{value2}};"/>
+    </div>
+    </div>
+  </mat-expansion-panel-header>
+  <mat-panel-description style="width: 110%; margin-left: -25px;">
+   
+    <mat-nav-list style="width: 200px; color: #000;">
+      <a routerLinkActive="active1" [routerLinkActiveOptions]="{exact:true}" mat-list-item routerLink="one"  style="height: 44px;"><mat-icon  > home </mat-icon> Home</a>
+      <a routerLinkActive="active1" [routerLinkActiveOptions]="{exact:true}" mat-list-item  routerLink="second"   style="height: 44px;"><mat-icon >class</mat-icon> Course</a>
+      <a routerLinkActive="active1" [routerLinkActiveOptions]="{exact:true}" mat-list-item routerLink="achievement" style="height: 44px;"><mat-icon >grade</mat-icon> Achievements</a>
+      <a routerLinkActive="active1" [routerLinkActiveOptions]="{exact:true}" mat-list-item routerLink="Photo" style="height: 44px;"><mat-icon >perm_media</mat-icon> Photos</a>
+      <a routerLinkActive="active1" [routerLinkActiveOptions]="{exact:true}" mat-list-item routerLink="enquiry" style="height: 44px;"><mat-icon >library_books</mat-icon> Enquiry</a>
+    <a routerLinkActive="active1" [routerLinkActiveOptions]="{exact:true}" mat-list-item routerLink="login" style="height: 44px;"><mat-icon >lock</mat-icon> Login</a>
+    <a routerLinkActive="active1" [routerLinkActiveOptions]="{exact:true}" mat-list-item routerLink="fees" style="height: 44px;"><mat-icon >lock</mat-icon> Fees</a>
+    </mat-nav-list>
+  </mat-panel-description>
+</mat-expansion-panel>
+
+<div style="font-size:{{size}}px;line-height: 1.6em;font-family:{{v}} ">
+  <router-outlet></router-outlet> 
+</div> 
+ 
+
+
+<footer id="foot1">  
+  <div id="firstfoot">
+      <ul>
+          <li><a href="">Contact Us</a></li> <br>
+          <li><a href="https://www.sonatech.ac.in/ece/faculty-ece-ug.php">Directory</a></li> <br>
+          <li><a href="https://www.sonatech.ac.in/events/abdul-kalam-visit.php">Visit</a></li> <br>
+          <li><a href="https://www.sonatech.ac.in/contact/sitemap.php">Maps</a></li> <br>
+      </ul>
+  </div>
+  <div id="secondfoot">
+      <ul>
+          <li><a href="https://www.google.com/search?q=sona+college+about&rlz=1C1CHBF_enIN1018IN1018&oq=sona+college+about&aqs=chrome..69i57j0i22i30.8181j0j15&sourceid=chrome&ie=UTF-8">About</a></li> <br>
+          <li><a href="sonatech.ac.in/academics/" target="_blank">Academic calenar</a></li> <br>
+          <li><a href="https://www.indiajobvaccancies.com/jobs-in-sona-college-of-technology.html" target="_blank">Careers</a></li> <br>
+          <li><a href="https://www.sonatech.ac.in/"> Media Resoureces</a></li>
+      </ul>
+  </div>
+  <div id="thirdfoot">
+      <ul>
+          <li><a href="https://www.facebook.com/sonacollege/" target="_blank"><img src="./assets/images/facebookiconimag.png"  alt="">Facebook</a></li> <br>
+          <li><a href="https://twitter.com/sonacollege/" target="_blank"><img src="./assets/images/twittericonimag.png"  alt="">Twitter</a></li> <br>
+          <li><a href="https://www.instagram.com/sonacollege/" target="_blank"><img src="./assets/images/instagramiconimag.png"  alt="">Instagram</a></li> <br>
+          <li><a href="https://www.linkedin.com/school/sona-college-of-technology/" target="_blank"><img src="./assets/images/linkediniconimag.png" alt="">linkedIn</a></li>
+      </ul>
+  </div>
+  <div id="fourthfoot">
+      <address>
+          sona college of technology <br>
+          Junction Main Rd, Salem, <br>
+           Tamil Nadu 636005 <br>
+          Phone.<u>80-2228 1131</u>
+      </address>
+      <p>copyrights &copy; 2018 my website</p>
+  </div>
+
+

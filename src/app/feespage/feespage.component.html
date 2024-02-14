@@ -1,0 +1,203 @@
+<marquee [scrollAmount]="20" id="headtext"><h1>Welcome To The Login Page !!! </h1></marquee>
+<!-- -->
+<mat-card style="display: {{displaying}};" >
+  <mat-card-content >
+    <div class="header">
+      <h2>ADMIN</h2>
+    </div>
+    <div class="email-input" >
+      <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input type="text" class="inputclass"  #value1 required matInput autocomplete="off" >
+        </mat-form-field>
+        </div>
+    <div class="email-input" >
+<mat-form-field appearance="outline">
+    <mat-label>Register No</mat-label>
+    <input type="number" class="inputclass" required matInput #value2  autocomplete="off">
+  </mat-form-field>
+  </div>
+  <div>
+    
+ <button mat-raised-button (click)="check(value1.value,value2.value)" >Submit</button>
+  </div>
+     </mat-card-content>
+     </mat-card>
+     <style>
+
+      table,
+    
+      tr,
+    
+      th,
+    
+      td {
+    
+        border-collapse: collapse;
+    
+        border: 1px solid grey;
+    
+      }
+    
+    
+    
+      th {
+    
+        padding: 10px 30px 10px 30px;
+    
+      }
+    
+    
+    
+      td {
+    
+        text-align: center;
+    
+        padding: 20px;
+    
+      }
+    
+    
+    
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    <div *ngFor="let d of feesData">
+      <h2>Fees Structure</h2>
+      <h1>{{d.name}}</h1>
+    
+      <h2>{{d.regno}}</h2>
+    
+      <h3>{{d.dob}}</h3>
+    
+      <table>
+    
+        <tr>
+    
+          <th>Year</th>
+    
+          <th>Tution Fees</th>
+    
+          <th>Semester</th>
+    
+          <th>Exam Fees</th>
+    
+          <th>Fees /year</th>
+    
+        </tr>
+    
+        <tr>
+    
+          <td rowspan="2">I</td>
+    
+          <td rowspan="2">{{d.firstyear}}</td>
+    
+          <td>1</td>
+    
+          <td>{{d.firstsem}}</td>
+    
+          <td rowspan="2">{{d.firstyear+d.firstsem+d.secondsem}}</td>
+    
+        </tr>
+    
+        <tr>
+    
+          <td>2</td>
+    
+          <td>{{d.secondsem}}</td>
+    
+    
+    
+        </tr>
+    
+        <tr>
+    
+          <td rowspan="2">II</td>
+    
+          <td rowspan="2">{{d.secondyear}}</td>
+    
+          <td>3</td>
+    
+          <td>{{d.thirdsem}}</td>
+    
+          <td rowspan="2">{{d.secondyear+d.thirdsem+d.fourthsem}}</td>
+    
+        </tr>
+    
+        <tr>
+    
+          <td>4</td>
+    
+          <td>{{d.fourthsem}}</td>
+    
+    
+    
+        </tr>
+    
+        <tr>
+    
+          <td rowspan="2">III</td>
+    
+          <td rowspan="2">{{d.thirdyear}}</td>
+    
+          <td>5</td>
+    
+          <td>{{d.fifthsem}}</td>
+    
+          <td rowspan="2">{{d.thirdyear+d.fifthsem+d.sixthsem}}</td>
+    
+        </tr>
+    
+        <tr>
+    
+          <td>6</td>
+    
+          <td>{{d.sixthsem}}</td>
+    
+    
+    
+        </tr>
+    
+        <tr>
+    
+          <td rowspan="2">IV</td>
+    
+          <td rowspan="2">{{d.fourthyear}}</td>
+    
+          <td>7</td>
+    
+          <td>{{d.seventhsem}}</td>
+    
+          <td rowspan="2">{{d.fourthyear+d.seventhsem+d.eighthsem}}</td>
+    
+        </tr>
+    
+        <tr>
+    
+          <td>8</td>
+    
+          <td>{{d.eighthsem}}</td>
+    
+        </tr>
+    
+        <tr>
+    
+          <th>Course Fees </th>
+    
+          <td colspan="4">
+    
+            {{d.firstyear+d.secondyear+d.thirdyear+d.fourthyear+d.firstsem+d.secondsem+d.thirdsem+d.fourthsem+d.fifthsem+d.sixthsem+d.seventhsem+d.eighthsem}}
+    
+          </td>
+    
+        </tr>
+    
+      </table>
+    
+    </div>
+

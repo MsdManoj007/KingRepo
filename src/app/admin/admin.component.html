@@ -1,0 +1,40 @@
+<marquee [scrollAmount]="20" id="headtext"><h1>Welcome {{displayName|uppercase}} !!!  </h1></marquee>
+
+<div>
+   <a style="background:none;" routerLink="../feesform"><button mat-raised-button>fees</button></a> 
+   <a style="background:none;" routerLink="../fees"> <button mat-raised-button>payment</button></a>
+</div>
+
+ <div class="table_section" id="containers">
+    <table>
+        <thead >
+            <tr >
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile Number</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let value of EnquiryList;let i=index">
+            <td>{{value.enqId}}</td>
+            <td>{{value.name}}</td>
+            <td>{{value.email}}</td>
+            <td>{{value.mobileNo}}</td>
+            <td>{{value.description}}</td>
+            <td  id="{{value.status|deleteSymbol}}" class="{{value.status|deleteSymbol}}">{{value.status}}</td>
+            <td><button id="edit_btn" mat-raised-button (click)="updatevalue(value.enqId,value.status)"><mat-icon id="editicon" >edit</mat-icon>Edit</button></td>
+             <td>   <button (click)="deleteItem(value.enqId,value.status)" id="btndelete">
+                    <a class="btn"><span></span><p>Delete</p></a>
+                    </button></td>
+            </tr>
+        </tbody>
+    </table> 
+
+  
+
+   

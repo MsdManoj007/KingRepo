@@ -1,0 +1,86 @@
+table {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+   
+  } 
+  table,tr,td,th{
+    border: 2px solid rgb(157, 157, 157);
+    border-collapse: collapse;
+  
+}
+tr{
+  border-radius: 14px;
+}
+img{
+  border-radius: 14px;
+}
+table tr th{
+  background-color: rgb(12, 15, 15);
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+table tr td{
+  text-align: center;
+  background-color: rgb(227, 235, 235);
+}
+#tablediv{
+    display: flex;
+    margin-bottom: 40px;
+}
+img:hover{
+  transform: scale(1.04);
+  transition: .3s;
+}
+#img1{
+  margin-left: 40px;
+  width: 750px;
+  margin-top: 20px;
+}
+#img2{
+  height: 255px;
+  width: 370px;
+}
+#img3{
+  height: 255px;
+  width: 350px;
+  margin-left: 20px;
+}
+#secimg2{
+  margin-left: 40px;
+  margin-top: 20px;
+}
+#img4{
+  height: 280px;
+  width: 370px;
+}
+
+#img5{
+  height: 280px;
+  width: 350px;
+  margin-left: 20px;
+}
+#img6{
+  margin-top: 20px;
+  width: 750px;
+  height: 280px;
+  margin-left: 40px;
+
+}
+#img7{
+  height: 350px;
+  width: 300px;
+}
+#thirimg3{
+  margin-left: 40px;
+  margin-top: 20px;
+}
+img{
+  transition: transform .100s ease-in-out;
+}
+
+img:hover{
+  transform: rotate(360deg);
+}

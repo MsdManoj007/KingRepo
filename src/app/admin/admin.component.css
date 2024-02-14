@@ -1,0 +1,178 @@
+.tabel_section{
+  
+    height: 650px;
+    overflow: auto;
+}
+#containers{
+    margin-top: -30px;
+}
+table{
+    margin-top: 50px;
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+  
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: rgb(9, 10, 10);
+    color: #f3f3f3; 
+    font-size: 18px;
+    z-index: 10;
+}
+th,td{
+    border-bottom: 1px solid #cba5a5;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+    font-size: 15px;
+}
+td{
+    font-size: 16px;
+ 
+}
+tr:hover td{
+    color: #0298cf;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
+::placeholder{
+    color: #0298cf;
+}
+#delete_btn{
+    background-color: red;
+    margin-left: 15px;
+ 
+}
+#edit_btn{
+    font-size: 20px;
+    background-color: rgb(43, 195, 86);
+    width: 130px;
+    height: 50px;
+    border-radius: 14px;
+   
+}
+#edit_btn:hover{
+    background-color: green;
+    font-size: 20px;
+    transition: 0.5s;
+    transform: scale(1);
+    
+}
+#completed{
+    color:green;
+}
+.Pending{
+    color: red;
+}
+
+#container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: #222;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#btndelete{
+    border: none;
+    outline: none;
+    background-color:  rgb(243, 10, 10);
+    border-radius: 14px;
+   
+}
+
+a{
+  
+    border: none;
+    outline: none;
+    text-align: center;
+    position: relative;
+    right: 0px;
+    width: 120px;
+    height: 50px;
+    background-color: rgb(243, 10, 10);
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    box-shadow: 0 5px 20 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+a span{
+    position: absolute;
+    left:20px;
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    background: #fff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+
+}
+/* a.active span{
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    border-radius: 0;
+    width: 20px;
+    height: 10px;
+    background: transparent;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+} */
+a:hover span{
+    transform: scale(1.5)rotate(60deg) translateY(10px);
+}
+a span::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top:-3px;
+    width:100%;
+    height: 2px;
+    background: #fff;
+    box-shadow: 12px -2px 0  rgb(243, 10, 10) ,  
+    6px -2px 0 #fff;
+}
+
+a.active:hover span::before{
+    transform: scale(0);
+}
+
+a:hover span::before{
+    transform: rotate(-90deg) translateX(50%) translateY(-10px); 
+}
+a p{
+    position: absolute;
+font-size: 20px;
+    margin-top: 12px;
+
+    right: 20px;
+    color: #fff;
+    transition: 0.5s;
+    
+}
+
+a:hover p{
+    transform: translateX(-50px) translateY(-5px) scale(0);
+}
+
+#editicon{
+    margin-right: 10px;
+}
+#edit_btn:hover #editicon{
+    transform: scale(1) rotate(-90deg);
+}
+#headtext{
+    margin-top: 30px;
+   }
+   #headtext h1{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 40px;
+   }

@@ -1,0 +1,121 @@
+<!-- <div id="Enquiry_headimage">
+    <img ID="Enquiry_img" runat="server" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMce4PMdfeztMhdr3Ap_E4ntq38PDRat5z_Q&usqp=CAU" />
+</div>
+<form #f="ngForm" name="form" (ngSubmit)="onSubmit(f)" >
+<div id="text_box_Container">
+    <ul>
+        <li>
+<mat-form-field  appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="Enquiry.Name" type="text"/>
+  </mat-form-field>
+</li>
+<li>
+      <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="Enquiry.Email" type="email">
+  </mat-form-field>
+</li>
+<li>
+  <mat-form-field appearance="fill">
+    <mat-label>Mobile Number</mat-label>
+    <input matInput [(ngModel)]="Enquiry.Mobile" type="number">
+  </mat-form-field>
+</li>
+<li>
+  <mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <textarea matInput [(ngModel)]="Enquiry.Description"></textarea>
+  </mat-form-field>
+</li>
+<li>
+   <a routerLink="../one">
+    <button mat-raised-button id="back_btn">Back</button>
+</a>
+<a>
+    <button mat-raised-button id="sub_btn">Submit</button>
+</a>
+</li>
+</ul>
+</div>
+</form> -->
+<marquee [scrollAmount]="20" id="headtext"><h1>Welcome To The Enquiries Page !!! </h1></marquee>
+<div id="cardcontainer">
+<mat-card>
+    <mat-card-content>
+      <h1 id="enq-txt"> Enquiry Details</h1>
+<div class="col-6 jumbotron">
+    <form (ngSubmit)="onSubmit()" autocomplete="off">
+    <div class="form-group">
+       
+        <label for="Name">Name:</label>
+        <input type="text" required placeholder="Enter the your Name ! ! !" name="name" [(ngModel)]="Enquiries.name" class="form-control" id="name" />
+   
+    </div>
+    <div class="form-group">
+        <label for="Name">Email:</label>
+        <input type="email" required="required" placeholder="Enter your Email ! ! !" name="email"  [(ngModel)]="Enquiries.email" class="form-control" id="name"/>
+    </div>
+    <div class="form-group">
+        <label for="Name">Mobile Number:</label>
+        <input   required="required" placeholder="Enter your Mobile Number ! ! !"  name="mobile" [(ngModel)]="Enquiries.mobileNo" class="form-control" id="name"/>
+    </div>
+    <div class="form-group">
+        <label for="Name">Description:</label>
+       <textarea class="form-control" required="required" placeholder="Enter your Description ! ! !" name="description" [(ngModel)]="Enquiries.description" ></textarea>
+    </div>
+    <button type="submit" id="submit-btn" class="btn btn-success submit" >Submit</button>
+</form>
+</div>
+</mat-card-content>
+</mat-card>
+</div>
+
+
+
+
+
+
+
+<!-- <mat-card  style="width: 1000px;">
+    <mat-card-content>
+      <div class="header">
+        <h2>Enquiry Details</h2>
+      </div>
+      <form (ngSubmit)="onSubmit()"   autocomplete="off" >
+        <div class="form-group" >
+          <mat-form-field class="full-width" appearance="outline" >
+            <mat-label style="color: #333;" for="Name">Name</mat-label>
+            <input name="name" [(ngModel)]="Enquiries.name" #value1 matInput required type="text" autocomplete="off" />
+          </mat-form-field>
+        </div>
+       
+            <div class="form-group" >
+              <mat-form-field class="full-width" appearance="outline" >
+                <mat-label style="color: #333;" for="Name">Email</mat-label>
+                <input name="email"  [(ngModel)]="Enquiries.email" #value2 matInput required type="email" autocomplete="off" />
+              </mat-form-field>
+            </div>
+
+            <div class="form-group" >
+                <mat-form-field class="full-width" appearance="outline" >
+                  <mat-label style="color: #333;" for="Name">Mobile Number</mat-label>
+                  <input  name="mobile" [(ngModel)]="Enquiries.mobileNo" #value3 matInput required type="number"  autocomplete="off" />
+                </mat-form-field>
+              </div>
+              <div class="form-group" >
+                <mat-form-field class="full-width" appearance="outline" >
+                  <mat-label style="color: #333;" for="Name">Description</mat-label>
+                  <input  name="description" [(ngModel)]="Enquiries.description" #value4 matInput required  width="100px" autocomplete="off" />
+                
+                </mat-form-field>
+              </div>
+       
+        <button mat-flat-button color="primary" type="submit" style="background-color: black;">
+                              Submit</button> -->
+                              <!-- <button type="submit" class="btn btn-success"  >Submit</button> -->
+      <!-- </form>
+    </mat-card-content>
+  </mat-card>  -->
+
+
